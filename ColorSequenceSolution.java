@@ -32,7 +32,6 @@ import java.io.InputStreamReader;
 import java.util.*;
 import java.util.stream.Stream;
 public class ColorSequenceSolution {
-
 	public static void main(String[] args) throws IOException {
 
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -68,7 +67,6 @@ public class ColorSequenceSolution {
 					/** Restart the new sequence */
 					count=1;
 				}
-
 			}
 
 			/** Final Sequence has not been added to the total yet, so add it here */
@@ -76,13 +74,10 @@ public class ColorSequenceSolution {
 				//System.out.print(count);
 				total = findTotalSequences(count, total);
 			}
-
 			ans.add(total);
 		}
 
 		ans.forEach(x->System.out.println(x));
-
-
 	}
 
 	/**
